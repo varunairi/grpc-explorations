@@ -27,14 +27,14 @@ public class FinderService extends FinderImplBase {
 			{
 				response=buildErrorResponse(i);
 			
-			responseObserver.onNext(response);
-			
-			try {
-				Thread.sleep(3000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+				responseObserver.onNext(response);
+				
+				try {
+					Thread.sleep(3000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 			response= buildSuccessResponse();
 			responseObserver.onNext(response);

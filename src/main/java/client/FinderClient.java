@@ -22,8 +22,8 @@ public class FinderClient {
 	
 	public static void main(String[] args) {
 		
-		singleBlockingSearch();
-		//simulateStreaming();
+		//singleBlockingSearch();
+		simulateStreaming();
 	}
 	
 	private static void singleBlockingSearch() {
